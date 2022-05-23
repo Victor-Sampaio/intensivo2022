@@ -9,7 +9,7 @@ $password = "4sAiJG9WhHKCp";
 try {
     $pdo = new PDO('mysql:host='.$hostname.';dbname='. $dbname, $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo 'conexão com o banco de dados conectado';
+    //echo 'conexão com o banco de dados conectado';
 }catch(PDOException $e){
     echo 'Erro' . $e->getMessage();
 }
