@@ -24,8 +24,9 @@ $(document).ready(function(){
                         $('#SENHA').val(dado.dados.SENHA)
                         $('#ID').val(dado.dados.ID)
                     })
-                    $('.btn-save').show()
+                    
                     $('#modal-atendente').modal('show')
+                    $('.btn-save').show()
                 } else {
                     Swal.fire({ // Inicialização do SweetAlert
                         title: 'Sistema Para Gerenciamento de Cantina', // Título da janela SweetAler
