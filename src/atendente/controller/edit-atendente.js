@@ -3,9 +3,8 @@ $(document).ready(function(){
     $('#table-atendente').on('click', 'button.btn-edit', function(e){
         e.preventDefault()
     
-        $('.modal-title').empty()
-        $('.modal-body').empty()
-    
+        $('.modal-title').empty();
+        $('.modal-body').empty();
         $('.modal-title').append("Edição de registro");
     
         let ID =`ID=${$(this).attr('id')}`
@@ -24,9 +23,10 @@ $(document).ready(function(){
                         $('#SENHA').val(dado.dados.SENHA)
                         $('#ID').val(dado.dados.ID)
                     })
-                    
-                    $('#modal-atendente').modal('show')
+                    $('.btn-save').removeAttr('data-operation', 'insert')
                     $('.btn-save').show()
+                    $('#modal-atendente').modal('show')
+                    
                 } else {
                     Swal.fire({ // Inicialização do SweetAlert
                         title: 'Sistema Para Gerenciamento de Cantina', // Título da janela SweetAler

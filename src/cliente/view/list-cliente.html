@@ -1,0 +1,62 @@
+<div class="row mt-5">
+    <div class="col-12">
+        <div class="card shadow mt-5">
+            <div class="card-header">
+                <div class"card-title">
+                    <div class="row">
+                        <div class="col-12 col-md-10">
+                            <h4 class="text-danger">
+                                Gerenciar Cliente
+                            </h4>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <button class="btn btn-success btn-block btn-new">
+                                <i class="mdi mdi-plus-circle"></i>Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover" id="table-cliente">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" class="text-center">ID</th>
+                                <th scope="col" class="text-center">NOME</th>
+                                <th scope="col" class="text-center">CELULAR</th>
+                                <th scope="col" class="text-center">AÇÕES</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-cliente" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="my-modal-title">Title</h5>
+                <button class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Content</p>
+            </div>
+            <div class="modal-footer">
+                <button id="close" class="btn btn-secondary cloose"><i class="mdi mdi-close-circle"></i>Fechar</button>
+                <button class="btn btn-success btn-save"><i class="mdi mdi-content-save"></i>Salvar</button>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<script src="src/cliente/controller/list-cliente.js"></script>
+<script src="src/cliente/controller/new-cliente.js"></script>
+<script src="src/cliente/controller/save-cliente.js"></script>
+<script src="src/cliente/controller/view-cliente.js"></script>
+<script src="src/cliente/controller/edit-cliente.js"></script>
